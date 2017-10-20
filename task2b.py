@@ -36,7 +36,11 @@ for day in alldays:
         low=day[3]
         spotday=day[1]
 print("The coldest day is and temp is on,",spotday,low)
-
+#for rainyday
+for day in alldays:
+    if day[0]=='Cloudy':
+        spotday=day[1]
+        print("The chances of  rain on ",spotday)
 
 
 

@@ -22,3 +22,13 @@ for forecasts in location.forecast():
         i+=1
 
 print(alldays)
+#days which has highest temp
+max=0
+for day in alldays:
+    if int(day[2])>int(max):
+        max=day[2]
+        hotday = day[1]
+print("The hottest day is and temp is max on,",hotday,max)
+
+
+

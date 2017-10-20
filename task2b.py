@@ -27,8 +27,16 @@ max=0
 for day in alldays:
     if int(day[2])>int(max):
         max=day[2]
-        hotday = day[1]
-print("The hottest day is and temp is max on,",hotday,max)
+        spotday = day[1]
+print("The hottest day is and temp is max on,",spotday,max)
+#for low temp
+low=0
+for day in alldays:
+    if int(day[3])<int(low):
+        low=day[3]
+        spotday=day[1]
+print("The coldest day is and temp is on,",spotday,low)
+
 
 
 
